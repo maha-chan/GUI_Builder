@@ -1,0 +1,78 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$backgroundColorToTop: linear-gradient(to top, #f857a6, #ff5858);
+$backgroundColorToLeft: linear-gradient(to left, #f857a6, #ff5858);
+$borderColor1: #adb5bd;
+$lightGray: #919191;
+
+.guiContainer {
+  min-height: 500px;
+  border: 0.5px solid lightgray;
+}
+
+.guiComponents {
+  .card-header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+  }
+  color: $borderColor1;
+  background: $backgroundColorToTop;
+  height: 100%;
+}
+
+.guiBuildingScreen {
+  height: 95%;
+  width: 100%;
+  border: dotted $borderColor1 !important;
+  background: $lightGray;
+  justify-content: center;
+  text-align: center;
+}
+
+.controlCardBody {
+  .elementHeading {
+    color: white !important;
+  }
+  button,
+  input,
+  textarea {
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.headerContent {
+  justify-content: center;
+  color: dimgray;
+  font-weight: bold;
+  :first-child {
+    color: blue;
+    margin-left: 5px;
+  }
+}
+
+.autoSaveHeader {
+  font-size: x-small;
+  font-style: italic;
+  align-items: flex-end;
+  text-align: end;
+  color: $lightGray;
+}
+
+.buildArea {
+  height: 95%;
+  width: 100%;
+  border: dotted $borderColor1;
+  border-radius: 5px;
+}
+
+.controlElementHeader {
+  display: flex;
+  :first-child {
+    color: white !important;
+    font-weight: bold;
+  }
+}
